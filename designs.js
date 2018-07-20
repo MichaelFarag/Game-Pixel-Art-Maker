@@ -4,10 +4,15 @@ let canvasShap = document.querySelector('#pixelCanvas');
 let SelectedHeight = document.querySelector('#inputHeight');
 let SelectedWidth = document.querySelector('#inputWidth');
 
-document.getElementById("sizePicker").addEventListener("submit", myFunction);
-function myFunction() {
- makeGrid();
-}
+// document.getElementById("sizePicker").addEventListener("submit", myFunction);
+// function myFunction() {
+//  makeGrid();
+// } 
+
+document.getElementById('sizePicker').addEventListener('submit', function (evt) {
+  evt.preventDefault();
+  makeGrid();
+})
 
 // Select color input
 let SelectedColor = document.querySelector('#colorPicker');
@@ -19,11 +24,11 @@ function makeGrid() {
   canvasShap.innerHTML = '';
   let tableHeight = SelectedHeight.value;
   let tableWidth = SelectedWidth.value;
-  
- //This function to fills slected color in the cell by click.
+
+  //This function to fills slected color in the cell by click.
   let setColor = function (tableCol) {
     tableCol.addEventListener('click', function () {
-      tableCol.style.backgroundColor = SelectedColor.value;
+      setColor.style.backgroundColor = SelectedColor.value;
     });
   }
 
@@ -34,6 +39,7 @@ function makeGrid() {
       let tableCol = tableTr.insertCell(y);
       tableCol.addEventListener('click', setColor(tableCol));
     }
+
   }
 
-}
+};
