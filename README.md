@@ -7,6 +7,6 @@ To begin, you'll be given starter code (including HTML and CSS) to build the app
 Your users should be able to:
 
 Dynamically set the size of the table as an N by M grid.
-Choose a color.
-Click a cell in the grid to fill that cell with the chosen color.
+Choose a color.<br>
+Click a cell in the grid to fill that cell with the chosen color.<br>
 Your primary task is to implement the makeGrid() function, that dynamically creates a grid that the user can interact with.
