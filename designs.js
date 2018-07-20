@@ -20,7 +20,7 @@ let SelectedColor = document.querySelector('#colorPicker');
 // When size is submitted by the user, call makeGrid()
 function makeGrid() {
   // Your code goes here!
-  debugger;
+  //debugger;
   canvasShap.innerHTML = '';
   let tableHeight = SelectedHeight.value;
   let tableWidth = SelectedWidth.value;
