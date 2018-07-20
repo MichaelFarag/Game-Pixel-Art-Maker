@@ -26,9 +26,9 @@ function makeGrid() {
   let tableWidth = SelectedWidth.value;
 
   //This function to fills slected color in the cell by click.
-  let setColor = function (tableCol) {
-    tableCol.addEventListener('click', function () {
-      tableCol.style.backgroundColor = SelectedColor.value;
+  let setColor = function (scolor) {
+    scolor.addEventListener('click', function () {
+      scolor.style.backgroundColor = SelectedColor.value;
     });
   }
 
